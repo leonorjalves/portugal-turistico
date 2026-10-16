@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Descobre os destinos mais bonitos de Portugal.">
+    <title>Portugal à Descoberta | Turismo</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Fonte gratuita -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS próprio -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <!-- Menu de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                Portugal à Descoberta
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal"
+                    aria-expanded="false"
+                    aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#destinos">Destinos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactos">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Secção inicial -->
+        <header id="inicio" class="hero">
+            <div class="hero-conteudo container text-center">
+                <p class="text-uppercase fw-semibold">
+                    Descobre. Explora. Vive.
+                </p>
+
+                <h1>Portugal é para descobrir</h1>
+
+                <p class="lead">
+                    Da praia às montanhas, encontra lugares
+                    que ficam na memória.
+                </p>
+
+                <a href="#destinos" class="btn btn-principal btn-lg">
+                    Explorar destinos
+                </a>
+            </div>
+        </header>
+
+        <!-- Destinos -->
+        <section id="destinos" class="secao container">
+            <div class="text-center mb-5">
+                <p class="etiqueta">Lugares especiais</p>
+                <h2>Destinos a não perder</h2>
+                <p class="texto-intro">
+                    Quatro sugestões para começares a tua viagem.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Destino 1 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <article class="card destino h-100">
+                        <img src="Imagens/praia.jpg"
+                             class="card-img-top"
+                             alt="Praia e falésias no Algarve"
+                             loading="lazy">
+
+                        <div class="card-body">
+                            <h3 class="card-title">Algarve</h3>
+                            <p class="card-text">
+                                Praias douradas, falésias impressionantes
+                                e pequenas aldeias à beira-mar.
+                            </p>
+                            <a href="https://www.visitportugal.com/pt-pt"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="link-destino">
+                                Descobrir mais →
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Destino 2 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <article class="card destino h-100">
+                        <img src="Imagens/sintra.jpg"
+                             class="card-img-top"
+                             alt="Paisagem verde e palácio em Sintra"
+                             loading="lazy">
+
+                        <div class="card-body">
+                            <h3 class="card-title">Sintra</h3>
+                            <p class="card-text">
+                                Palácios, jardins românticos e
+                                paisagens envoltas em mistério.
+                            </p>
+                            <a href="https://www.parquesdesintra.pt/"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="link-destino">
+                                Descobrir mais →
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Destino 3 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <article class="card destino h-100">
+                        <img src="Imagens/porto.jpg"
+                             class="card-img-top"
+                             alt="Arquitetura e paisagem urbana do Porto"
+                             loading="lazy">
+
+                        <div class="card-body">
+                            <h3 class="card-title">Porto</h3>
+                            <p class="card-text">
+                                Ruas históricas, gastronomia,
+                                pontes e vistas sobre o Douro.
+                            </p>
+                            <a href="https://visitporto.travel/pt-PT"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="link-destino">
+                                Descobrir mais →
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Destino 4 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <article class="card destino h-100">
+                        <img src="Imagens/madeira.jpg"
+                             class="card-img-top"
+                             alt="Montanhas verdes da ilha da Madeira"
+                             loading="lazy">
+
+                        <div class="card-body">
+                            <h3 class="card-title">Madeira</h3>
+                            <p class="card-text">
+                                Montanhas, levadas, florestas
+                                e vistas inesquecíveis sobre o mar.
+                            </p>
+                            <a href="https://visitmadeira.com/pt/"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="link-destino">
+                                Descobrir mais →
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Sobre o projeto -->
+        <section id="sobre" class="sobre">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-md-6">
+                        <p class="etiqueta">A nossa inspiração</p>
+                        <h2>Pequeno país, grandes experiências</h2>
+                    </div>
+
+                    <div class="col-md-6">
+                        <p>
+                            Portugal combina natureza, história,
+                            cultura e gastronomia. Este website
+                            pretende inspirar visitantes a explorar
+                            diferentes regiões e a valorizar o
+                            património português.
+                        </p>
+
+                        <a href="https://www.visitportugal.com/pt-pt"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn btn-principal">
+                            Planear uma visita
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tabela informativa -->
+        <section class="container secao">
+            <div class="text-center mb-4">
+                <p class="etiqueta">Planeia a viagem</p>
+                <h2>Que tipo de destino preferes?</h2>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Destino</th>
+                            <th scope="col">Experiência</th>
+                            <th scope="col">Ideal para</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Algarve</td>
+                            <td>Praias e mar</td>
+                            <td>Verão e descanso</td>
+                        </tr>
+                        <tr>
+                            <td>Sintra</td>
+                            <td>Palácios e jardins</td>
+                            <td>Cultura e passeios</td>
+                        </tr>
+                        <tr>
+                            <td>Porto</td>
+                            <td>História e gastronomia</td>
+                            <td>Escapadinhas urbanas</td>
+                        </tr>
+                        <tr>
+                            <td>Madeira</td>
+                            <td>Natureza e caminhadas</td>
+                            <td>Aventura</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Contactos -->
+        <section id="contactos" class="contactos text-center">
+            <div class="container">
+                <h2>Começa a tua descoberta</h2>
+                <p>
+                    Consulta informação turística e prepara
+                    a tua próxima aventura.
+                </p>
+
+                <a href="https://www.visitportugal.com/pt-pt"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="btn btn-claro">
+                    Contactar o Turismo de Portugal
+                </a>
+
+                <p class="mt-4 mb-0">
+                    <a href="creditos.html" class="link-creditos">
+                        Créditos e fontes das imagens
+                    </a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape text-center">
+        <div class="container">
+            <p class="mb-1">
+                &copy; 2026 Portugal à Descoberta
+            </p>
+            <p class="mb-0">
+                Projeto educativo desenvolvido em HTML, CSS e Bootstrap 5.
+            </p>
+            <a href="#inicio">Voltar ao início ↑</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript do Bootstrap para o menu móvel -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

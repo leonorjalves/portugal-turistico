@@ -1,0 +1,321 @@
+css
+
+/* ==========================
+   ESTILOS GERAIS
+   ========================== */
+
+:root {
+    --verde: #173f35;
+    --verde-claro: #285d4c;
+    --dourado: #e6b96a;
+    --fundo: #f8f7f2;
+    --texto: #303630;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--texto);
+    background: var(--fundo);
+    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+h2 {
+    font-size: clamp(1.8rem, 4vw, 2.7rem);
+}
+
+a {
+    transition: color 0.2s ease;
+}
+
+/* ==========================
+   MENU
+   ========================== */
+
+.navbar {
+    background: var(--verde);
+    padding: 18px 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.ponto {
+    color: var(--dourado);
+}
+
+.navbar .nav-link {
+    color: #fff;
+    margin-left: 16px;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: var(--dourado);
+}
+
+/* ==========================
+   DESTAQUE PRINCIPAL
+   ========================== */
+
+.hero {
+    min-height: 570px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(10, 35, 29, 0.88),
+            rgba(10, 35, 29, 0.25)
+        ),
+        url("Imagens/lisboa.jpg") center 55% / cover no-repeat;
+}
+
+.hero-conteudo {
+    max-width: 650px;
+    padding: 85px 0;
+}
+
+.hero h1 {
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    margin-bottom: 24px;
+}
+
+.hero-texto {
+    max-width: 530px;
+    font-size: 1.05rem;
+    margin-bottom: 30px;
+}
+
+.etiqueta {
+    color: var(--dourado);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.etiqueta-escura {
+    color: var(--verde-claro);
+}
+
+/* ==========================
+   BOTÕES
+   ========================== */
+
+.btn-destaque {
+    background: var(--dourado);
+    color: #202820;
+    border: 2px solid var(--dourado);
+    border-radius: 4px;
+    padding: 12px 25px;
+    font-weight: 600;
+}
+
+.btn-destaque:hover,
+.btn-destaque:focus {
+    background: transparent;
+    color: var(--dourado);
+    border-color: var(--dourado);
+}
+
+/* ==========================
+   SECÇÕES E CARTÕES
+   ========================== */
+
+.secao {
+    padding: 90px 0;
+}
+
+.subtitulo {
+    color: #70766f;
+    margin-top: 15px;
+}
+
+.destino {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.06);
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.destino:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.12);
+}
+
+.destino img {
+    width: 100%;
+    height: 245px;
+    object-fit: cover;
+}
+
+.destino .card-body {
+    padding: 26px;
+}
+
+.categoria {
+    color: var(--verde-claro);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.destino .card-title {
+    font-size: 1.45rem;
+}
+
+.link-destino {
+    display: inline-block;
+    color: var(--verde-claro);
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.link-destino:hover {
+    color: #a06b19;
+}
+
+/* ==========================
+   CULTURA
+   ========================== */
+
+.cultura {
+    padding: 90px 0;
+    background: #eaece4;
+}
+
+.cultura-imagem {
+    width: 100%;
+    height: 410px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cultura h2 {
+    margin-bottom: 24px;
+}
+
+/* ==========================
+   TABELA
+   ========================== */
+
+.table {
+    background: #fff;
+    vertical-align: middle;
+}
+
+.table thead th {
+    padding: 16px;
+}
+
+.table tbody td {
+    padding: 14px 16px;
+}
+
+/* ==========================
+   CONTACTO E RODAPÉ
+   ========================== */
+
+.contacto {
+    padding: 80px 20px;
+    background: var(--verde);
+    color: #fff;
+}
+
+.contacto h2 {
+    margin-bottom: 20px;
+}
+
+.contacto p:not(.etiqueta) {
+    margin-bottom: 28px;
+}
+
+.rodape {
+    background: #102c25;
+    color: #e8eee9;
+    padding: 35px 0 20px;
+}
+
+.rodape a {
+    color: var(--dourado);
+    text-decoration: none;
+}
+
+.rodape a:hover {
+    text-decoration: underline;
+}
+
+.pequeno {
+    margin-top: 18px;
+    font-size: 0.8rem;
+    color: #b8c6be;
+}
+
+/* ==========================
+   ACESSIBILIDADE
+   ========================== */
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--dourado);
+    outline-offset: 4px;
+}
+
+/* ==========================
+   ECRÃS PEQUENOS
+   ========================== */
+
+@media (max-width: 767px) {
+    .hero {
+        min-height: 500px;
+        background-position: center;
+    }
+
+    .hero-conteudo {
+        padding: 65px 12px;
+    }
+
+    .secao,
+    .cultura {
+        padding: 60px 0;
+    }
+
+    .cultura-imagem {
+        height: 280px;
+    }
+
+    .navbar .nav-link {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+    }
+}
